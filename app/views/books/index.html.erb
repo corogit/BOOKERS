@@ -1,0 +1,32 @@
+
+  
+  <body>
+    <h1>ようこそ Bookers へ！
+    </h1>
+
+    <p>
+    Bookers では、さまざまな書籍に関するあなたの意見や</br>
+    
+    印象を共有し交換することができます
+
+    </p>
+
+    <a href = >start</a>
+  </body>
+
+<h1>New Book</h1>
+<!-- form_with部分 -->
+<%= form_with model:@book, local:true do |f| %>
+
+  <h4>Title</h4>
+  <%= f.text_field :title %>
+
+
+
+  <h4>Body</h4>
+  <%= f.text_area :body %>
+  
+  <h5></h5>
+  <%= f.submit 'Create Book' %>
+
+<% end %>
