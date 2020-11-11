@@ -1,12 +1,13 @@
-      <h1>Books</h1>
-      
-      <p>Title</p>
-      <%= @blog.title %>
-      <p>Body</p>
-       <%= @blog.body %>
-      
-      
-      
-      <a href="#">編集</a>
-      <a href="#">削除</a>
-      
+
+
+      <h4>Title:</h4>
+      <%= @book.title %>
+      <h4>Body:</h4>
+       <%= @book.body %>
+
+
+
+
+     <%= link_to "Edit", edit_book_path(@book) %>
+     <%= link_to "Back", :back %>
+
