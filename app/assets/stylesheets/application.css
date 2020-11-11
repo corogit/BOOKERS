@@ -34,7 +34,7 @@ strong {
 }
 
 
-p {
+p.top {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -42,7 +42,7 @@ p {
     margin-inline-end: 0px;
 }
 
-p, ol, ul, td {
+p.top, ol, ul, td {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -50,15 +50,24 @@ p, ol, ul, td {
 }
 
 table {
+    width: 741px;
+    height: 252px;
     display: table;
     border-collapse: separate;
     box-sizing: border-box;
     border-spacing: 2px;
     border-color: grey;
+    
 }
+
+
 
 tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
+}
+
+.notifications {
+    color: green;
 }
